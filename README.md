@@ -3,8 +3,8 @@
 >Yokoo Kazuma  
 
 ## (1) 復習
-- 演習課題: Virtual Network playground 2 
-	- /netns_pg2
+>演習課題: Virtual Network playground 2  
+>netns_pg2/
   
   ![](img/topo3.png)
 

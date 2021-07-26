@@ -4,7 +4,9 @@
 
 ## (1) 復習
 - 演習課題: Virtual Network playground 2 
->/netns_pg2  
+	- /netns_pg2
+  
+  ![](img/topo3.png)
 
 ## (2) TiNET入門
   

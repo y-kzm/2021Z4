@@ -3,7 +3,7 @@
 - Yokoo Kazuma  
 
 ## (1) 復習
-演習課題: Virtual Network playground 2  
+- 演習課題: Virtual Network playground 2  
   
   ![](img/topo3.png)
 
@@ -11,11 +11,11 @@
 
 ## (2) TiNET入門 
 ### 2.1 課題: 基本  
-演習課題: Virtual Network playground 1  
+- 演習課題: Virtual Network playground 1  
 
   ![](img/topo2.png)
 
-Usage  
+- Usage  
 
 ~~~
 tinet up -c spec.yaml | sudo sh -x

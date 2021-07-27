@@ -11,7 +11,7 @@
 >netns_pg2/
 
 ## (2) TiNET入門 
-### 2.1 課題: 基本  
+### (2.1) 課題: 基本  
 - 演習課題: Virtual Network playground 1  
   - TiNETを用いて構築する(実行するだけ)
 
@@ -30,7 +30,7 @@ tinet down -c spec.yaml | sudo sh -x
 >yamlファイルは以下を使用   
 >https://github.com/tinynetwork/tinet/blob/master/examples/simple/topo2/spec.yaml  
 
-### 2.2 課題: 実践  
+### (2.2) 課題: 実践  
 - 演習課題: Virtual Network playground 2  
   - TiNETを用いて構築する
 

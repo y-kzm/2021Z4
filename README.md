@@ -34,7 +34,7 @@ tinet down -c spec.yaml | sudo sh -x
 - 演習課題: Virtual Network playground 2  
   - TiNETを用いて構築する
 
->tinet_pg2/
+>tinet_pg2/  
 >yamlファイルを書き換えた
 
 

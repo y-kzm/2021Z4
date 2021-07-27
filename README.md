@@ -8,12 +8,12 @@
  
   ![](img/topo3.png)
 
->netns_pg2/
+>作業フォルダ: netns_pg2/
 
 ## (2) TiNET入門 
 ### (2.1) 課題: 基本  
 - 演習課題: Virtual Network playground 1  
-  - TiNETを用いて構築する(実行するだけ)
+  - TiNETを用いて構築する(実行するだけの動作確認)
 
   ![](img/topo2.png)
 
@@ -26,8 +26,8 @@ tinet test -c spec.yaml | sudo sh -x
 tinet down -c spec.yaml | sudo sh -x
 ~~~
 
->tinet_pg1/  
->yamlファイルは以下を使用   
+>作業フォルダ: tinet_pg1/  
+>yamlファイルは以下をそのまま使用   
 >https://github.com/tinynetwork/tinet/blob/master/examples/simple/topo2/spec.yaml  
 
 ### (2.2) 課題: 実践  
@@ -36,7 +36,7 @@ tinet down -c spec.yaml | sudo sh -x
 
  ![](img/topo3.png)
 
->tinet_pg2/  
->yamlファイルを書き換えた
+>作業フォルダ: tinet_pg2/  
+>yamlファイル: tinet_pg2/spec_pg2.yaml  
 
 

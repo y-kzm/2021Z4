@@ -1,4 +1,4 @@
-# Z4 講義用
+# SecCamp2021 Z4 講義用 Repo
 - 2021_07_26~  
 - Yokoo Kazuma  
 

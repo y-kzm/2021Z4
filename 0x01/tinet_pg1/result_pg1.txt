@@ -1,0 +1,15 @@
+C1 -> C4
+-------------------------------------------------------------------------
+ubuntu@student04:~/seccamp-Z4/tinet_pg1$ docker exec C1 ping -c 5 10.4.0.2
+PING 10.4.0.2 (10.4.0.2) 56(84) bytes of data.
+64 bytes from 10.4.0.2: icmp_seq=1 ttl=62 time=0.075 ms
+64 bytes from 10.4.0.2: icmp_seq=2 ttl=62 time=0.053 ms
+64 bytes from 10.4.0.2: icmp_seq=3 ttl=62 time=0.053 ms
+64 bytes from 10.4.0.2: icmp_seq=4 ttl=62 time=0.052 ms
+64 bytes from 10.4.0.2: icmp_seq=5 ttl=62 time=0.051 ms
+
+--- 10.4.0.2 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4086ms
+rtt min/avg/max/mdev = 0.051/0.056/0.075/0.013 ms
+-------------------------------------------------------------------------
+

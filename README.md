@@ -4,7 +4,7 @@
 
 ---
 
-# 0x01
+# 事前学習 0x01
 ## (1) 復習
 - 演習課題: Virtual Network playground 2  
   - netnsを用いて構築する
@@ -44,6 +44,6 @@ tinet down -c spec.yaml | sudo sh -x
 
 ---
 
-# 0x02
+# 事前学習 0x02
 
 

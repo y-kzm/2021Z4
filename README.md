@@ -9,6 +9,8 @@
 - 演習課題: Virtual Network playground 2  
   - netnsを用いて構築する
  
+ ### topo3
+ 
   ![](img/topo3.png)
 
 >作業フォルダ: netns_pg2/
@@ -17,6 +19,8 @@
 ### (2.1) 課題: 基本  
 - 演習課題: Virtual Network playground 1  
   - TiNETを用いて構築する(実行するだけの動作確認)
+
+### topo2
 
   ![](img/topo2.png)
 

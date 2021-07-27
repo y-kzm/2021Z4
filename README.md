@@ -2,6 +2,8 @@
 - 2021_07_26~  
 - Yokoo Kazuma  
 
+---
+
 # 0x01
 ## (1) 復習
 - 演習課題: Virtual Network playground 2  
@@ -40,7 +42,7 @@ tinet down -c spec.yaml | sudo sh -x
 >作業フォルダ: tinet_pg2/  
 >yamlファイル: tinet_pg2/spec_pg2.yaml  
 
-
+---
 
 # 0x02
 

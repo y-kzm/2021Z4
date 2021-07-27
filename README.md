@@ -39,7 +39,7 @@ tinet down -c spec.yaml | sudo sh -x
 
 ### (2.2) 課題: 実践  
 - 演習課題: Virtual Network playground 2  
-  - TiNETを用いて[topo3]を構築する
+  - TiNETを用いて topo3 を構築する
 
 >作業フォルダ: tinet_pg2/  
 >yamlファイル: tinet_pg2/spec_pg2.yaml  

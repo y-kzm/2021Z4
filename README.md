@@ -24,3 +24,13 @@ Yokoo Kazuma
 
 ---
 
+- TiNET Usage
+
+~~~
+tinet up -c spec.yaml | sudo sh -x
+tinet conf -c spec.yaml | sudo sh -x
+tinet test -c spec.yaml | sudo sh -x
+tinet down -c spec.yaml | sudo sh -x
+~~~
+
+---

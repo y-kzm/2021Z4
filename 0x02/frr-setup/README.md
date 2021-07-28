@@ -22,7 +22,6 @@
 
 ### コマンドの種類
 - 実行可能なコマンドを?コマンドで確かめる   
-  
 ~~~
 R1# 
  add Add registration
@@ -48,7 +47,7 @@ R1#
 ~~~
 
 ### コマンド実行結果  
-
+- show interface  
 ~~~
 R1# show interface
 Interface lo is up, line protocol is up
@@ -92,7 +91,10 @@ Interface net2 is up, line protocol is up
  inet 10.2.0.1/24
  Interface Type Other
  Link ifindex 2(net0)
+~~~
 
+- show running-config  
+~~~
 R1# show running-config 
 Building configuration...
 

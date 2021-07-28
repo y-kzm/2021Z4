@@ -8,6 +8,8 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
   - yamlファイルは上記repoのREADMEに記載のものを使用
   - FRRのvtyに入って何かしらのコマンドを実行する
 
+>作業フォルダ: frr_setup/
+
 
 
 ---

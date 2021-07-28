@@ -1,6 +1,7 @@
 ## (1) FRR Setup
 個人的に分からないことを調べた内容、およびコマンド実行結果を記述する  
 
+---
 ### 用語
 - FRR  
   - Free Range Routing  
@@ -20,6 +21,7 @@
   R1#
   ~~~
 
+---
 ### コマンドの種類
 - 実行可能なコマンドを?コマンドで確かめる   
 ~~~
@@ -46,6 +48,7 @@ R1#
  write Write running configuration to memory, network, or terminal
 ~~~
 
+---
 ### コマンド実行結果  
 - show interface  
 ~~~

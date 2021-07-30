@@ -55,7 +55,7 @@ R1#
 
 ### コマンド実行結果  
 - show interface  
-~~
+~~~
 R1# show interface
 Interface lo is up, line protocol is up
  Link ups: 0 last: (never)
@@ -98,10 +98,10 @@ Interface net2 is up, line protocol is up
  inet 10.2.0.1/24
  Interface Type Other
  Link ifindex 2(net0)
-~~
+~~~
 
 - show running-config  
-~~
+~~~
 R1# show running-config 
 Building configuration...
 
@@ -120,7 +120,7 @@ line vty
 bfd
 !
 end
-~~
+~~~
 
 
 
@@ -129,36 +129,26 @@ end
 - (1)に加えてBGP peerを確立する  
 
 ### Peer 確立
-- R1のvtyに接続する
-~~
-ubuntu@student04:~/seccamp-Z4/0x02/bgp_peer_setup$ docker exec -it R1 vtysh
-
-Hello, this is FRRouting (version 6.0).
-Copyright 1996-2005 Kunihiro Ishiguro, et al.
-
-R1# 
-~~
-
 - R1-configに設定情報を書き込む
-~~
+~~~
 R1# conf t
 R1(config)# router bgp 1
 R1(config-router)# bgp router-id 10.255.1.1
 R1(config-router)# neighbor 10.255.1.2 remote-as 2
 R1(config-router)# !
-~~
+~~~
 
 - R2も同様に
-~~
+~~~
 R2(config)# router bgp 2
 R2(config-router)# bgp router-id 10.255.1.2
 R2(config-router)# neighbor 10.255.1.1 remote-as 1
 R2(config-router)# !
-~~
+~~~
 
 ### Peer 確認
 - R1
-~~
+~~~
 R1# show ip bgp summary       
 
 IPv4 Unicast Summary:
@@ -226,10 +216,10 @@ Nexthop local: ::
 BGP connection: shared network
 BGP Connect Retry Timer in Seconds: 120
 Read thread: on  Write thread: on
-~~
+~~~
 
 - R2
-~~
+~~~
 R2# show ip bgp summary 
 
 IPv4 Unicast Summary:
@@ -297,7 +287,7 @@ Nexthop local: ::
 BGP connection: shared network
 BGP Connect Retry Timer in Seconds: 120
 Read thread: on  Write thread: on
-~~
+~~~
 
 ---
 

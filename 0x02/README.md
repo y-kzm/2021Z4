@@ -100,7 +100,7 @@ Interface net2 is up, line protocol is up
  Link ifindex 2(net0)
 ~~~
 
-- show running-config  (現味の設定を確認)
+- show running-config  (現在の設定を確認)
 ~~~
 R1# show running-config 
 Building configuration...

@@ -2,7 +2,6 @@
 https://github.com/seccamp-z/2021Z4/tree/main/0x02
 
 ---
-
 ## (1) FRR Setup
 - TiNETを用いてtopo2のR1、R2でFRRoutingを動かす
   - yamlファイルは上記repoのREADMEに記載のものを使用
@@ -177,6 +176,7 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
   Total number of neighbors 1
   ~~~
 
+---
 ## (3) BGP Route Advertise
 ### [設定内容]
 - R1  

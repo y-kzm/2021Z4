@@ -126,26 +126,24 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
 ---
 ## (2) BGP Peer Setup
 ### [Peer 確立]
-- R1
   ~~~
+  ### R1 ###
   R1# conf t
   R1(config)# router bgp 1
   R1(config-router)# bgp router-id 10.255.1.1
   R1(config-router)# neighbor 10.255.1.2 remote-as 2
-  R1(config-router)# !
   ~~~
 
-- R2
   ~~~
+  ### R2 ###
   R2(config)# router bgp 2
   R2(config-router)# bgp router-id 10.255.1.2
   R2(config-router)# neighbor 10.255.1.1 remote-as 1
-  R2(config-router)# !
   ~~~
 
 ### [Peer 確認]
-- R1
   ~~~
+  ### R1 ###
   R1# show ip bgp summary       
 
   IPv4 Unicast Summary:
@@ -160,8 +158,8 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
   Total number of neighbors 1
   ~~~
 
-- R2
   ~~~
+  ### R2 ###
   R2# show ip bgp summary 
 
   IPv4 Unicast Summary:
@@ -179,8 +177,8 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
 ---
 ## (3) BGP Route Advertise
 ### [設定内容]
-- R1  
   ~~~
+  ### R1 ###
   R1(config-router)# address-family ipv4 unicast 
   R1(config-router-af)# network 10.1.0.0/24
   R1(config-router-af)# exit-address-family 
@@ -199,8 +197,9 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
   Displayed 2 routes and 2 total paths
   ~~~
 
-- R2
+
   ~~~
+  ### R2 ###
   R2(config)# route bgp 2
   R2(config-router)# address-family ipv4 unicast 
   R2(config-router-af)# network 10.3.0.0/24

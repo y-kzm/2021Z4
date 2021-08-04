@@ -262,5 +262,96 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
   3 packets transmitted, 0 received, 100% packet loss, time 2036ms
   ~~~
 
+---
+## (4) Capture BGP Packets
+### [手順]
+  1. R1でtcpdumを実行
+      ~~~
+      docker exec -it R1 tcpdump -nni net0 -w /tmp/in.pcap  
+      ~~~
+  2. 別windowで各vtyに接続してbgpの設定を行う
+      ~~~
+      ### R1 ###
+      R1# sh running-config 
+      Building configuration...
+
+      Current configuration:
+      !
+      frr version 6.0
+      frr defaults traditional
+      hostname R1
+      log syslog informational
+      no ipv6 forwarding
+      service integrated-vtysh-config
+      username cumulus nopassword
+      !
+      router bgp 1
+       bgp router-id 10.255.1.1
+       neighbor 10.255.1.2 remote-as 2
+       !
+       address-family ipv4 unicast
+       network 10.1.0.0/24
+       exit-address-family
+      !
+      line vty
+      !
+      bfd
+      !
+      end
+
+      ### R2 ###
+      R2# sh running-config 
+      Building configuration...
+
+      Current configuration:
+      !
+      frr version 6.0
+      frr defaults traditional
+      hostname R2
+      log syslog informational
+      no ipv6 forwarding
+      service integrated-vtysh-config
+      username cumulus nopassword
+      !
+      router bgp 2
+       bgp router-id 10.255.1.2
+       neighbor 10.255.1.1 remote-as 1
+       !
+       address-family ipv4 unicast
+       network 10.3.0.0/24
+       exit-address-family
+      !
+      line vty
+      !
+      bfd
+      !
+      end
+      ~~~
+  3. pingを行う(C1->C3, C3->C1)
+  4. コンテナR1にあるpcapファイルをホストへ
+      ~~~
+      $ docker cp <コンテナid>:/tmp/in.pcap in.pcap
+      ~~~
 
 ---
+## (5)  Analyze BGP Packets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

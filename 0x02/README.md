@@ -27,7 +27,8 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
     ~~~
 
 ### [コマンドの種類]
-- 実行可能なコマンドを?コマンドで確かめる   
+- 実行可能なコマンドを?コマンドで確かめる  
+ 
   ~~~
   R1# 
   add Add registration

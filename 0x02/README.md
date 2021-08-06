@@ -28,7 +28,6 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
 
 ### [コマンドの種類]
 - 実行可能なコマンドを?コマンドで確かめる  
- 
   ~~~
   R1# 
   add Add registration
@@ -351,8 +350,22 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
 
 ### [OPENメッセージ] 
 > R2(10.255.1.2) -> R1(10.255.1.1)
-  - Version
-  - My 
+  - Version: 4
+    - BGP-4
+  - My AS: 2
+    - BGPスピーカのAS番号
+    - 1~65535
+  - Hold Time: 180
+    - KEEP ALIVE, UPDATEメッセージを最後に受け取ってからピアを切断するまでの保持時間
+    - BGPピア間で値が異なる場合は短い方が採用される
+    - 0もしくは3以上の値を取る
+    - HoldTime=180, KEEPALIVE=60がよく使われるらしい
+  - BGP Identifier: 10.255.1.2
+    - BGPスピーカを表す識別子(ルータID)
+    - 通常、そのルータが持つIPアドレスが使われる
+  - Optional Parameters Length: 46
+    - 以下に続くOptional Parametersの長さ   
+  - Optional Parameters (?)
 
 
 

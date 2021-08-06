@@ -27,7 +27,7 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
     ~~~
 
 ### [コマンドの種類]
-  - 実行可能なコマンドを?コマンドで確かめる   
+- 実行可能なコマンドを?コマンドで確かめる   
   ~~~
   R1# 
   add Add registration
@@ -53,7 +53,7 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
   ~~~
 
 ### [コマンド実行結果]  
-  - show interface  
+- show interface  
   ~~~
   R1# show interface
   Interface lo is up, line protocol is up
@@ -99,7 +99,7 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
    Link ifindex 2(net0)
   ~~~
 
-  - show running-config  (現在の設定を確認)
+- show running-config  (現在の設定を確認)
   ~~~
   R1# show running-config 
   Building configuration...
@@ -220,7 +220,7 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
   ~~~
 
 ### [ping 確認]
-  - C1 -> C3
+- C1 -> C3
   ~~~
   ubuntu@student04:~/seccamp-Z4/0x02$ docker exec -it C1 ping -c 3 10.3.0.2
   PING 10.3.0.2 (10.3.0.2) 56(84) bytes of data.
@@ -233,7 +233,7 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
   rtt min/avg/max/mdev = 0.059/0.066/0.081/0.012 ms
   ~~~
 
-  - C3 -> C1
+- C3 -> C1
   ~~~
   ubuntu@student04:~/seccamp-Z4/0x02$ docker exec -it C3 ping -c 3 10.1.0.2
   PING 10.1.0.2 (10.1.0.2) 56(84) bytes of data.
@@ -246,7 +246,7 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
   rtt min/avg/max/mdev = 0.045/0.051/0.056/0.009 ms
   ~~~
 
-  - C4 -> C1 や C2 -> C3 などはpingが届かない!
+- C4 -> C1 や C2 -> C3 などはpingが届かない!
   ~~~
   ubuntu@student04:~/seccamp-Z4/0x02$ docker exec -it C4 ping -c 3 10.1.0.2
   PING 10.1.0.2 (10.1.0.2) 56(84) bytes of data.

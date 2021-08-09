@@ -365,8 +365,83 @@ https://github.com/seccamp-z/2021Z4/tree/main/0x02
     - 通常、そのルータが持つIPアドレスが使われる
   - Optional Parameters Length: 46
     - 以下に続くOptional Parametersの長さ   
-  - Optional Parameters (?)
+  - Optional Parameters: 
+    - 拡張
+    - 可変長
 
+### [KEEPALIVE メッセージ]
+> R2 -> R1
+> R1 -> R2
+  - ヘッダ情報
+    - Marker: ffffffffffffffffffff
+    - Len: 19
+      - 最小値(ヘッダしかない)
+    - Type: KEEPALIVE MESSAGE (4)
+  - HoldTime = 180 x 1/3 = 60 で使われることが多い
+    - 60秒後に同じやりとりをしていた    
+
+### [UPDATE メッセージ]
+> R2 -> R1  
+  - Withdrawn Routes Len: 0
+    - Withdrawn Routes が存在しない
+      - 到達できなくなり、ネットワークから削除される経路(IPアドレスプレフィックス)  
+      - プレフィックスは同時に多数格納できる  
+      - 可変長
+  - Total Path Attribute Len: 0
+    - Path Attribute が存在しない
+      - パス属性を格納 > 出てきたときに...
+      - 可変長
+
+> R1 -> R2 
+  - Withdrawn Routes Len: 0
+    - Withdrawn Routes が存在しない
+  - Total Path Attribute Len: 28
+    - Path Attribute: <Type<Flags, Code>, Len, Value>  
+      - もう少し調査...
+  - NLRI: 10.1.0.0/24
+    - prefix Len: 24
+    - prefix : 10.1.0.0
+    - 可変長
+      - UPDATE Message Len - 23 - Total Path Attribute Len - Withdrrawn Routes Len  
+      - で求められる(求められるからLenを記述するフィールドがない?)
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
 
 
 
